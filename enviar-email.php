@@ -16,7 +16,7 @@ $corpo .= "Email: " . $email . "\r\n";
 $corpo .= "Mensagem: " . $message . "\r\n";
 
 // Email que receberá a mensagem (Não se esqueça de substituir)
-$email_to = 'condominio_riopreguicas@hotmail.com';
+$email_to = '';
 
 // Enviando email
 $status = mail($email_to, mb_encode_mimeheader($subject, "utf-8"), $corpo, $headers);
